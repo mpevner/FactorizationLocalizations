@@ -54,6 +54,9 @@ factorization.factoryBlock.CRYSTALLIZER.name=Crystallizer
 factorization.factoryBlock.CERAMIC.name=Sculpture
 factorization.factoryBlock.SERVORAIL.name=Servo Rail
 factorization.factoryBlock.PARASIEVE.name=Parasieve
+factorization.factoryBlock.PARASIEVE.hint=Filters items
+factorization.gui.PARASIEVE=Parasieve
+
 factorization.factoryBlock.COMPRESSIONCRAFTER.name=Compression Crafter
 factorization.factoryBlock.COMPRESSIONCRAFTER.hint=Crafting with blocks and barrels
 factorization.factoryBlock.CALIOMETRIC_BURNER.name=Caliometric Burner
@@ -65,23 +68,38 @@ item.factorization:socket/SOCKET_ROBOTHAND.name=Robotic Arm
 item.factorization:socket/SOCKET_SHIFTER.name=Item Shifter
 item.factorization:socket/scissors.name=Enormous Scissors
 item.factorization:socket/scissors.hint=Place on Sockets
+
+factorization.factoryBlock.null.name=Factory
+factorization.factoryBlock.null.hint=DO NOT USE
+
 factorization.factoryBlock.HINGE.name=Hinge
 #factorization.factoryBlock.HINGE.hint=§cExperimental
 factorization.factoryBlock.SAP_TAP.name=Sap Tap
+factorization.factoryBlock.SAP_TAP.hint=Extracts sap from very large trees
 factorization.factoryBlock.SAP_TAP.crowded=There's already a Sap Tapper nearby
 factorization.factoryBlock.SAP_TAP.thecrowd=(Over here)
 factorization.factoryBlock.SAP_TAP.belowlog=Must be placed under a log
 factorization.factoryBlock.SAP_TAP.info=Logs: %1$s\nLeaves: %2$s\nEffective Logs: %3$s\n%4$s / sap
 factorization.factoryBlock.ANTHRO_GEN.name=Anthropic Generator
+factorization.factoryBlock.ANTHRO_GEN.hint=Gathers entheas from villagers
 factorization.factoryBlock.STEAM_SHAFT.name=Steam Whirligig
+factorization.factoryBlock.STEAM_SHAFT.hint=Converts steam to shaft power
 factorization.factoryBlock.SHAFT_GEN.name=Charge Generator
+factorization.factoryBlock.SHAFT_GEN.hint=Converts shaft power to charge
 factorization.factoryBlock.BIBLIO_GEN.name=Bibliogen
+factorization.factoryBlock.BIBLIO_GEN.hint=Shaft power from libraries
 factorization:bibliogen.interference=There is already a bibliogen nearby
 factorization.factoryBlock.WATER_WHEEL_GEN.name=Waterwheel Base
+factorization.factoryBlock.WATER_WHEEL_GEN.hint=Outputs shaft power
 factorization.factoryBlock.WIND_MILL_GEN.name=Windmill Base
+factorization.factoryBlock.WIND_MILL_GEN.hint=Outputs shaft power
 factorization.factoryBlock.SHAFT.name=Shaft
+factorization.itemshaft.format.name=Shaft - %s
+factorization.itemshaft.shearedfalse=Banded
+factorization.itemshaft.shearedtrue=Plain
 
-
+tile.factorization.ResourceBlock.COPPER_ORE.name=Copper Ore
+tile.factorization.ResourceBlock.COPPER_BLOCK.name=Block of Copper
 tile.factorization.ResourceBlock.SILVERORE.name=Silver Ore
 tile.factorization.ResourceBlock.SILVERBLOCK.name=Block of Silver
 tile.factorization.ResourceBlock.LEADBLOCK.name=Block of Lead
@@ -91,6 +109,10 @@ tile.factorization:fractured_bedrock.name=Fractured Bedrock
 tile.factorization:blasted_bedrock.name=Blasted Bedrock
 tile.BlockMatcher.name=Block Matcher
 tile.blastBlock.name=Blast Block
+tile.factorization:geyser.name=Geyser
+tile.factorization:extruder.name=Extruder
+
+tile.lightair.name=Light Air
 
 fluid.factorization:fluid/steam=Steam
 
@@ -103,6 +125,7 @@ item.factorization:diamond_shard.shift=Even more fun than\nthrowing them in lava
 item.factorization:dark_iron_ingot.name=Dark Iron Ingot
 item.factorization:lead_ingot.name=Lead Ingot
 item.factorization:silver_ingot.name=Silver Ingot
+item.factorization:copper_ingot.name=Copper Ingot
 item.factorization:acid.name=Sulfuric Acid
 item.factorization:acid_regia.name=Aqua Regia
 item.factorization:magnet.name=Magnet
@@ -199,6 +222,7 @@ factorization:servo/component.name=Servo Component
 item.factorization:servo/instruction_plate.name=Instruction Plate
 item.factorization:servo/commenter.name=Commenter
 item.factorization:servo/servo.name=Servo
+entity.factorization.factory_servo.name=Servo
 item.factorization:servo/sprocket.name=Dark Iron Sprocket
 item.factorization:servo/servo_motor.name=Servo Motor
 item.factorization:servo/decorator.fz.decorator.servoGrateWood.name=Wooden Servo Grate
@@ -469,6 +493,7 @@ item.factorization:spawnPoster.hint=Sneak to destroy
 item.factorization:leafBomb.name=Leaf Bomb
 item.factorization:sap.name=Sap
 item.factorization:entheas.name=Entheas
+item.factorization:entheas.hint=Made by the Anthropic Generator
 
 fz.ent.citizen.name=[§f§lThe Citizen§r] 
 fz.ent.citizen.say.intruder=So, you are the intruder?
@@ -547,7 +572,7 @@ factorization.artifact.canstillcreate=You're still feeling inspired! Where's the
 
 
 factorization.factoryBlock.LEGENDARIUM.name=The Hall of Legends
-factorization.factoryBlock.LEGENDARIUM.hint=Only one per dimension class
+factorization.factoryBlock.LEGENDARIUM.hint=Limit: One per dimension type
 factorization.legendarium.nodroidsallowed=We don't serve your kind here!
 factorization.legendarium.canremove={ITEM_NAME}\nis ready to be reforged
 factorization.legendarium.caninsert=An artifact can be retired
@@ -583,4 +608,13 @@ item.factorization:mansandwich.hungry=You could really go for a manwich right ab
 #Chat message when a player tries to use a manwich, has eaten none, but has one in their inventory
 item.factorization:mansandwich.eatit=Oh, that manwich looks sooo good!
 
+item.factorization:waterTile.name=Water Block
+item.factorization:waterTile.hint=How do you craft with pure water?\nUse the Compression Crafter!
+item.factorization:lavaTile.name=Lava Block
+item.factorization:lavaTile.hint=Crafting with fiery lava?\nPossible with a Compression Crafter!
 
+item.factorization:charge/wire_leader.name=Flattened Copper Wire
+factorization:charge/flat/measure=Energy: %s
+factorization:charge/sparkling.info=Energy: %s\n(Gold's pretty conductive!)
+factorization.factoryBlock.LIGHTNING_ROD.name=Lightning Rod
+factorization.factoryBlock.LIGHTNING_ROD.hint=Use a sheep or wool blocks\nto build up ionization
